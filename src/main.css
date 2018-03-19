@@ -1,0 +1,228 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  background: #2451c5;
+}
+
+.header nav {
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  height: 60%;
+}
+.logo img {
+  height: 100%;
+  display: block;
+}
+
+.header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.header nav ul li a{
+  color: white;
+  text-decoration: none;
+  padding: 0.4em 0.8em;
+}
+
+.banner {
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+}
+
+.banner:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url(images/bg11.png) 50%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+}
+
+.banner h1 {
+  font-size: 4em;
+  padding: 0;
+  margin: 0;
+}
+
+
+.banner > p {
+  font-size: 1.4em;
+}
+
+.tool {
+  position: absolute;
+  bottom: -20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #2451c5;
+  border: 1px solid #325bc5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+.tool > span {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #527ae2;
+}
+
+.tool > span > a {
+  width: 40%;
+  height: 60%;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #c1cff5;
+  border-radius: 40%;
+  text-align: center;
+}
+
+.banner .btns {
+  margin-top: 6em;
+  z-index: 1;
+}
+
+.banner .btns > a {
+  display: inline-block;
+  padding: 8px 0;
+  width: 180px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: "Gill Sans", "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  transition: opacity 200ms;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.banner .btns > a.get-started-btn {
+  background: white;
+  color: #2550c5;
+}
+
+.get-started {
+  display: flex;
+  flex-direction: column;
+  padding: 3em 15% 5em;
+  position: relative;
+}
+
+.get-started .step {
+  margin-top: 1em;
+}
+
+.get-started h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.get-started h4 {
+  font-size: 1.3em;
+  font-weight: normal;
+}
+
+.get-started pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 1em;
+  line-height: 1.45;
+  background-color: #e6e7e8;
+  border-radius: 3px;
+}
+
+.get-started .more {
+  margin-top: 2em;
+  display: inline-block;
+  font-size: 1.1em;
+  color: #3F51B5;
+  text-decoration: none;
+}
+
+.feature {
+  position: relative;
+  background: #f8fafc;
+  display: flex;
+  padding: 5em 15%;
+  flex-wrap: wrap;
+}
+
+.feature h1 {
+  text-align: center;
+  flex-basis: 100%;
+}
+
+.feature .fe {
+  padding: 3em 0 4em;
+  flex: 1;
+}
+
+.feature .fe h4 {
+  font-size: 1.3em;
+}
+
+.feature .fe {
+  text-align: center;
+}
+
+.feature .tool {
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f8fafc;
+  border: 1px solid #f3f3f3;
+}
+
+.feature .tool span {
+  border: 1px solid #d4d3d3;
+}
+
+.feature .tool span i{
+  color: #999;
+}
+
+
+
+
+footer {
+  height: 100px;
+  padding: 0 15%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8fafc;
+}
+
+footer > p {
+  width: 100%;
+  text-align: center;
+}
+
+footer > p > a {
+  color: #333;
+  text-decoration: none;
+}
+footer > p > a:hover{
+  text-decoration: underline;
+}
